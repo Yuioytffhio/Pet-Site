@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Q8 -Step1: Adopt a Dog/Cat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Adoptapet.css">
+        <script src="Jsfiles/AdoptAPet.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <header>
+                <h1>Hiba's Pet Adoption Center</h1>
+                <div id="logo">
+                    <a href="Home.html">
+                        <img src="https://i.pinimg.com/736x/f6/ec/40/f6ec404f22c0f2c6a69281aa2357adfc.jpg" 
+                        alt="Logo" style="width:10%;">
+                    </a>
+                </div>
+                <div id="currentDateAndTime"></div>
+            </header>    
+        </div>
+
+        <div id="pagebody">
+            <div id="sidemenu">
+                <ul>
+                    <li><a href="Home.html">Home page</a></li>
+                    <li><a href="BrowseAvailablePets.html">Browse Available Pets</a></li>
+                    <li><a href="FindADogCat.html" class="active">Find a dog/cat</a></li>
+                    <li><a href="DogCare.html">Dog Care</a></li>
+                    <li><a href="CatCare.html">Cat Care</a></li>
+                    <li><a href="GiveAwayPet.html">Have a pet to give away?</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div id="content">
+                <form id="petForm">
+                    <fieldset id="findADogCat">
+                        <legend>Find a Dog/Cat</legend>
+
+                        <p>Cat or dog*:</p>
+                        <input type="radio" id="cat" name="pet">
+                        <label for="cat">Cat</label>
+                        <input type="radio" id="dog" name="pet">
+                        <label for="dog">Dog</label>
+                        <br><br>
+
+                        <p>Breed of dog or cat*</p>
+                        <input type="radio" id="breed_of_cat" name="breed">
+                        <label for="catbreed">Cat breed: 
+                            <select name="cat_breed_selection" id="catbreed">
+                                <option value="" disabled selected hidden>Select a breed</option>
+                                <option value="ragdoll">Ragdoll</option>
+                                <option value="siamese">Siamese</option>
+                                <option value="american_shorthair">American Shorthair</option>
+                                <option value="domestic_shorthair">Domestic Shorthair</option>
+                            </select>
+                        </label>
+                        <br>
+                        <input type="radio" id="breed_of_dog" name="breed">
+                        <label for="dogbreed">Dog breed: 
+                            <select name="dog_breed_selection" id="dogbreed">
+                                <option value="" disabled selected hidden>Select a breed</option>
+                                <option value="australian_shepherd">Australian Shepherd</option>
+                                <option value="golden_retriever">Golden Retriever</option>
+                                <option value="poodle">Poodle</option>
+                                <option value="mixbreed">Mix Breed</option>
+                            </select>
+                        </label>
+                        <br>
+                        <input type="radio" id="doesntmatter" name="breed">
+                        <label for="doesntmatter">Doesn't matter</label>
+                        <br><br>
+
+                        <p><label for="age">Preferred age of animal*</label></p>
+                        <select name="age_selection" id="age">
+                            <option value="" disabled selected hidden>Select an age range</option>
+                            <option value="doesntmatter">Doesnt matter</option>
+                            <option value="young_adult">Young adult: 1 to 6 years old</option>
+                            <option value="mature_adult">Mature adult: 7 to 10 years old</option>
+                            <option value="senior">Senior: 10 years and above</option>
+                        </select>
+                        <br><br>
+                        
+                        <p>Preferred gender*</p>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                        <br><br>
+
+                        <p>Gets along with*:</p>
+                        <input type="checkbox" id="otherdogs" name="getsalongwith">
+                        <label for="otherdogs">Other dogs</label><br>
+                        <input type="checkbox" id="othercats" name="getsalongwith">
+                        <label for="othercats">Other cats</label><br>
+                        <input type="checkbox" id="children" name="getsalongwith">
+                        <label for="children">Small children</label>
+                        <br><br>
+                        
+                        <div class="button-container">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                        <br><br>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <footer>
+                <a href="DisclaimerStatement.html">Privacy/ Disclaimer Statement</a>
+            </footer>
+        </div>
+        <script>
+            getCurrentDateAndTime();
+            setInterval(getCurrentDateAndTime, 1000);
+        </script>
+        <script src="Jsfiles/FindADogCat.js"></script>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+/*header*/
+#header {
+    text-align: center;
+    background-color: rgb(56, 42, 21);
+    color:rgb(244, 221, 138);
+    padding: 1%;
+    border: 10px solid rgb(32, 24, 12);
+}
+
+#logo img {
+    border-radius: 50%;
+}
+
+#currentDateAndTime {
+    text-align: right;
+    color: rgb(243, 229, 179);
+}
+
+/*body*/
+body {
+    background-color: rgb(255, 255, 236);
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+
+}
+
+#pagebody {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+}
+
+/*sidemenu*/
+#sidemenu {
+    float: left;
+    background-color: rgb(56, 42, 21);
+    position: relative;
+    width: 450px;
+    padding: 1%;
+}
+
+#sidemenu a {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    padding: 14px 12px;
+    border-radius: 8px;
+    width: 73%;
+    text-decoration: none;
+    background-color:rgb(70, 56, 35);
+    color: rgb(255, 255, 236);
+    line-height: 150%;
+}
+
+#sidemenu a:hover:not(.active):not(.imgsidemenu) {
+    background-color: rgb(56, 42, 21);
+    color: rgb(244, 221, 138);
+}
+
+#sidemenu a.active {
+    background-color: rgb(244, 221, 138);
+    color:rgb(56, 42, 21)
+}
+
+#sidemenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sidemenu li {
+    list-style: none;
+}
+
+/*content*/
+#content {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    line-height: 160%;
+    word-wrap: break-word;
+    color:rgb(32, 24, 12);
+    text-align: center;
+    position: relative;
+    width: 2000px
+}
+
+#homecontent {
+    display: table-column;
+}
+
+#findADogCat, #giveAwayPet {
+    border: 1px solid rgb(32, 24, 12);
+    border-radius: 20%;
+    margin: 15px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left:15px;
+    padding-bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#animalcare {
+    display: table-column;
+    text-align: left;
+}
+
+/*available pets*/
+.availablePets {
+    position: relative;
+    border: 2px solid rgb(86, 71, 47);
+    background-color: rgb(70, 56, 35);
+    border-radius: 8%;
+    margin: 10px auto;
+    width: 80%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+}
+
+.availablePets img {
+    padding-top: 1%;
+    height: 350px;
+}
+
+.prev, .next {
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 1; 
+    padding-top: 25%;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: rgb(243, 229, 179);
+}
+
+.prev:hover, .next:hover {
+    color: rgb(70, 56, 35);
+}
+
+.prev {
+    left: 0;
+    top: 50%;
+}
+
+.next {
+    right: 0;
+    top: 50%;
+}
+
+.petInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(243, 229, 179);
+    background-color: rgba(56, 42, 21, 0.9);
+    padding: 10px;
+    margin-top: 10px; 
+}
+
+.interestedButton {
+    background-color: rgb(244, 221, 138);
+    border: 1px solid rgb(56, 42, 21);
+    border-radius: 40%;
+    padding: 5px
+}
+
+.interestedButton:hover {
+    background-color: rgb(70, 56, 35);
+    color: rgb(243, 229, 179);
+}
+
+/*form*/
+form {
+    display: flex;
+    align-items:end;
+    width: 100%;
+}
+
+fieldset {
+    background-color: rgb(238, 204, 82, 0.25);
+}
+
+form legend {
+    margin-left: 100px;
+    text-align:left;
+    font-weight:bold;
+}
+
+form p {
+    font-weight: bold;
+    margin: 0px;
+    color:rgb(32, 24, 12);
+}
+
+form label {
+    color:rgb(56, 42, 21);
+}
+
+input[type=text] {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/*submit and reset buttons*/
+.button-container input[type="submit"], .button-container input[type="reset"] {
+    background-color: rgb(244, 221, 138);
+    color:rgb(56, 42, 21);
+    border-radius: 40%;
+    padding: 5px;
+    border: 1px solid rgb(70, 56, 35);
+}
+
+.button-container input[type="submit"]:hover, .button-container input[type="reset"]:hover {
+    background-color: rgb(70, 56, 35);
+    border: 1px solid rgb(32, 24, 12);
+    color: rgb(238, 204, 82);
+}
+
+/*footer*/
+#footer {
+    background-color: rgb(238, 204, 82);
+    padding: 2%;
+    height: 60px;
+}
+
+#footer a {
+    text-decoration: underline;
+    color: rgb(56, 42, 21);
+}
